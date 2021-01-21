@@ -1,0 +1,24 @@
+- BIG O NOTATION
+
+We say that an algorithm is O(f(n)) if the number of simple operations the computer has to do is eventually less than a constant times f(n), as n increases
+
+    - f(n) could be linear (fn(n) = n);
+    - f(n) could be quadratic (f(n) = n^2);
+    - f(n) could be constant (f(n) = 1);
+    - f(n) could be something entirely different!
+
+Simplifying Big O Expressions:
+
+    - O(2n) => O(n);
+    - O(500) => O(1);
+    - O(13n^2) => O(n^2);
+    - O(n + 10) => O(n);
+    - O(1000n + 50) => O(n);
+    - O(n^2 + 5n + 8) => O(n^2);
+
+Big O Shorthands:
+
+    - Arithmetic operations are constant;
+    - Variable assignment is constant;
+    - Accessing elements in an array (by index) or object (by key) is constant;
+    - In a loop, the complexity is the length of the loop times the complexity of whatever happens inside of the loop;
