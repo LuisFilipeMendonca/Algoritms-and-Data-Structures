@@ -1,6 +1,6 @@
 - BIG O NOTATION
 
-We say that an algorithm is O(f(n)) if the number of simple operations the computer has to do is eventually less than a constant times f(n), as n increases
+We say that an algorithm is O(f(n)) if the number of simple operations the computer has to do is eventually less than a constant times f(n), as n increases.
 
     - f(n) could be linear (fn(n) = n);
     - f(n) could be quadratic (f(n) = n^2);
@@ -22,3 +22,12 @@ Big O Shorthands:
     - Variable assignment is constant;
     - Accessing elements in an array (by index) or object (by key) is constant;
     - In a loop, the complexity is the length of the loop times the complexity of whatever happens inside of the loop;
+
+
+- SPACE COMPLEXITY
+
+How much additional memory we need to allocate in order to run the code in our algorithm?
+
+    - Most primitives (booleans, numbers, undefined, null) are constant space;
+    - Strings require O(n) space (where n is the string length);
+    - Reference types are generally O(n), where n is the length (for arrays) or the number of keys (for objects);
