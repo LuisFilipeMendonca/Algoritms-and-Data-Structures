@@ -1,0 +1,24 @@
+PROBLEM SOLVING
+
+    - understand the problem;
+    - explore concrete examples;
+    - break it down;
+    - solve/simplify;
+    - look back and refactor;
+
+SIMPLIFY
+
+    - find the core difficulty in what you're trying to do;
+    - temporarily ignore that difficulty;
+    - write a simplified solution;
+    - then incorporate that difficulty back in;
+
+REFATORING QUESTIONS
+
+    - can you check the result?
+    - can you derive the result differently?
+    - can you understand it at a glance;
+    - can you use the result or method for some other problem?
+    - can you improve the performance of your solution?
+    - can you think of other ways to refator?
+    - how have other people solved this problem?
