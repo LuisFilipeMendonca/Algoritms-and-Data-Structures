@@ -1,0 +1,16 @@
+- RECURSION
+
+    A process (a function in our case) that calls itself.
+
+The call stack:
+
+    It's a stack data structure.
+    Any time a function is invoked it is placed (pushed) on the top of the call stack.
+    When javascript sees the return keyword or when the function ends, the compiler will remove (pop).
+    We are used to functions being pushed on the call stack and popped off when they are done. When we write recursive functions, we keep pushing new functions onto the call stack.
+
+Where things go bad:
+
+    No base case.
+    Forgetting to return or returning the wrong thing.
+    Stack overflow.
