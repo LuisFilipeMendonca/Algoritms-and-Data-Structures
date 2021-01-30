@@ -1,0 +1,45 @@
+BUBBLE SORT
+
+    Sorting algorithm where the largest values bubble up to the top.
+
+    - start looping from with a varible called i the end of the array towards the beginning.
+    - start an inner loop with a variable called j from the beginning until i - 1.
+    - if arr[j] is greater that arr[j+1], swap those two values.
+    - return the sorted array.
+
+SELECTION SORT
+
+    Similar to bubble sort, but instead of first placing large values into sorted position, it places small values into sorted position.
+
+    - store the first element as the smallest value you've seen so far.
+    - compare this item to the next item in the array until you find a smaller number.
+    - if a smaller number is found, designate that smaller number to be the new 'minimum' and continue until the end of the array.
+    - if the 'minimum' is not the value (index) you initially began with, swap the two values.
+    - repeat this with the next element until the array is sorted.
+
+INSERTION SORT
+
+    Builds up the sort by gradually creating a larger left half which is always sorted.
+
+    - start by picking the second element in the array.
+    - now compare the second element with the one before it and swap if necessary.
+    - continue to the next element and if it is in the incorrect order, iterate through the sorted portion (the left side) to place the element in the correct place.
+    - repeat until the array is sorted.
+
+MERGE SORT
+
+    It's a combination of two things - merging and sorting.
+    Exploits the fact that arrays of 0 or 1 element are always sorted.
+    Works by decomposing an array into smaller arrays of 0 or 1 elements, then building up a newly sorted array.
+
+QUICK SORT
+
+    Like merge sort, explots the fact that arrays of 0 or 1 element are always sorted.
+    Works by selecting one element (called the 'pivot') and finding the index where the pivot should end up in the sorted array.
+    Once the pivot is positioned appropriately, quick sort can be applied on either side of the pivot.
+
+RADIX SORT
+
+    Radix sort is a special sorting algorithm that works on lists of numbers.
+    It never makes comparisons between elements.
+    It exploits the fact that information about size of a number is encoded in the number digits.
