@@ -12,7 +12,7 @@ class Node {
 // BIG O
 //
 // Insertion => O(1)
-// Removal => Begining O(1) => End O(n)
+// Removal => Beginning O(1) => End O(n)
 // Searching => O(n)
 // Access => O(n)
 // ============================================
