@@ -35,3 +35,18 @@ QUEUES
     Queues are useful for precessing tasks and are foundational for more complex data structures.
     Insertion and Removal can be done in O(1).
     Can be implemented with arrays with push and shift or with unshift and pop.
+
+TREES
+
+    Root -> The top node in a tree.
+    Child -> A node directly connected to another node when moving away from the Root.
+    Parent -> The converse notion of a child.
+    Siblings -> A group of nodes with the same parent.
+    Leaf -> A node with no children.
+    Edge -> The connection between one node and another.
+
+BINARY SEARCH TREE
+
+    Every parent node has at most two children.
+    Every node to the left of a parent node is always less than the parent.
+    Every node to the right of a parent node is always greater than the parent.
