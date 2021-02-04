@@ -24,6 +24,14 @@ DOUBLY LINKED LISTS
 
 STACK
 
-    Stacks are a Lifo data structure where the last value in is always the first one out.
+    Stacks are a LIFO data structure where the last value in is always the first one out.
     Stacks are used to handle function invocations (the call stack), for operations like undo/redo, and for routing (back/forward) and much more!
     They are not a built in structure in Javascript but are relatively simple to implement.
+    Can be implemented with arrays with push and pop or with shift and unshift.
+
+QUEUES
+
+    Queues are a FIFO data structure, all elements are first in first out.
+    Queues are useful for precessing tasks and are foundational for more complex data structures.
+    Insertion and Removal can be done in O(1).
+    Can be implemented with arrays with push and shift or with unshift and pop.
