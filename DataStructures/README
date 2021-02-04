@@ -21,3 +21,9 @@ DOUBLY LINKED LISTS
     Almost identical to Singly Linked Lists, except every node has another pointer, to the previous node.
     Better than Singly Linked Lists for finding nodes and can be done in half the time.
     They do take up more memory considering the extra pointer.
+
+STACK
+
+    Stacks are a Lifo data structure where the last value in is always the first one out.
+    Stacks are used to handle function invocations (the call stack), for operations like undo/redo, and for routing (back/forward) and much more!
+    They are not a built in structure in Javascript but are relatively simple to implement.

@@ -207,3 +207,5 @@ list.insert(1, 7);
 list.remove(2);
 
 list.loop();
+
+console.log();
