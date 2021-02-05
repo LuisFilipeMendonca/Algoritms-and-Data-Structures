@@ -38,6 +38,7 @@ QUEUES
 
 TREES
 
+    Trees are non-linear data structures that contain a root and child nodes.
     Root -> The top node in a tree.
     Child -> A node directly connected to another node when moving away from the Root.
     Parent -> The converse notion of a child.
@@ -45,8 +46,20 @@ TREES
     Leaf -> A node with no children.
     Edge -> The connection between one node and another.
 
+BINARY TREE
+
+    Can have values of any type, but at most two children for each parent.
+
 BINARY SEARCH TREE
 
     Every parent node has at most two children.
     Every node to the left of a parent node is always less than the parent.
     Every node to the right of a parent node is always greater than the parent.
+
+TREE TRAVERSAL (BFS vs DFS)
+
+    Time complexity is the same on both.
+    Depth first take more space for long trees.
+    DFS InOrder => use when need the data in order.
+    DFS PreOrder => useful when you need to recreate the tree (export the tree structure).
+
