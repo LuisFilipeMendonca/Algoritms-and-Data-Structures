@@ -63,3 +63,19 @@ TREE TRAVERSAL (BFS vs DFS)
     DFS InOrder => use when need the data in order.
     DFS PreOrder => useful when you need to recreate the tree (export the tree structure).
 
+HEAP
+
+    Very similar to a binary search tree, but with some different rules.
+    In a MaxBinaryHeap, parent nodes are always larger than child nodes, In a MinBinaryHeap, parent nodes are always smaller than child nodes.
+
+MAX BINARY HEAP
+
+    Each parent has a most two child nodes.
+    The value of each parent node is always greater that its child nodes.
+    In a max binary heap the parent is greater than the children, but there are no guarantees between sibling nodes.
+    A binary heap is as compact as possible. All the children of each node are as full as they can be and left children are filled out first.
+
+PRIORITY QUEUE
+
+    A data structure where each element has a priority.
+    Elemenets. with higher priorities are served before elements with lower priorities.
