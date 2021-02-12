@@ -125,6 +125,25 @@ class SinglyLinkedList {
     return true;
   }
 
+  remove(index) {
+    if (index < 0 || index >= this.length) return undefined;
+
+    const prevNode = this.get(index - 1);
+    const removedNode = prevNode.next;
+    const nextNode = removedNode.next;
+
+    prevNode.next = nextNode;
+    removedNode.next = null;
+    this.length--;
+
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
+
+    return removedNode;
+  }
+
   loop() {
     let currentIdx = 0;
     let current = this.head;
@@ -138,116 +157,10 @@ class SinglyLinkedList {
 }
 
 let sll = new SinglyLinkedList();
-console.log("-------------------------------");
-console.log("-----------POP TESTS-----------");
-console.log("-------------------------------");
-console.log(sll.push(5));
-console.log(sll.length);
-console.log(sll.head.val);
-console.log(sll.tail.val);
-console.log("--------------------");
-console.log(sll.push(10));
-console.log(sll.length);
-console.log(sll.head.val);
-console.log(sll.head.next.val);
-console.log(sll.tail.val);
-console.log("--------------------");
-console.log(sll.push(15));
-console.log(sll.length);
-console.log(sll.head.val);
-console.log(sll.head.next.val);
-console.log(sll.head.next.next.val);
-console.log(sll.tail.val);
-console.log("--------------------");
-console.log(sll.pop().val);
-console.log(sll.tail.val);
-console.log(sll.length);
-console.log(sll.pop().val);
-console.log(sll.length);
-console.log(sll.pop().val);
-console.log(sll.length);
-console.log(sll.pop());
-console.log(sll.length);
-console.log("-------------------------------");
-console.log("-------------------------------");
-console.log("-----------GET TESTS-----------");
-console.log("-------------------------------");
-sll = new SinglyLinkedList();
 sll.push(5).push(10).push(15).push(20);
-console.log(sll.get(0).val);
-console.log(sll.get(1).val);
-console.log(sll.get(2).val);
-console.log(sll.get(3).val);
-console.log(sll.get(4));
-console.log("-------------------------------");
-console.log("-------------------------------");
-console.log("---------INSERT TESTS----------");
-console.log("-------------------------------");
-sll = new SinglyLinkedList();
-sll.push(5).push(10).push(15).push(20);
-console.log(sll.insert(0, 12));
-console.log(sll.insert(100, 12));
+console.log(sll.remove(2).val);
+console.log(sll.remove(100));
 console.log(sll.length);
 console.log(sll.head.val);
 console.log(sll.head.next.val);
 console.log(sll.head.next.next.val);
-console.log(sll.head.next.next.next.val);
-console.log(sll.head.next.next.next.next.val);
-console.log(sll.insert(5, 25));
-console.log(sll.head.next.next.next.next.next.val);
-console.log(sll.tail.val);
-console.log("-------------------------------");
-console.log("-------------------------------");
-console.log("---------ROTATE TESTS----------");
-console.log("-------------------------------");
-sll = new SinglyLinkedList();
-sll.push(5).push(10).push(15).push(20).push(25);
-console.log(sll.head.val);
-console.log(sll.tail.val);
-sll.rotate(3);
-console.log(sll.head.val);
-console.log(sll.head.next.val);
-console.log(sll.head.next.next.val);
-console.log(sll.head.next.next.next.val);
-console.log(sll.head.next.next.next.next.val);
-console.log(sll.tail.val);
-console.log(sll.tail.next);
-console.log("-------------------------------");
-sll = new SinglyLinkedList();
-sll.push(5).push(10).push(15).push(20).push(25);
-console.log(sll.head.val);
-console.log(sll.tail.val);
-sll.rotate(100);
-console.log(sll.head.val);
-console.log(sll.head.next.val);
-console.log(sll.head.next.next.val);
-console.log(sll.head.next.next.next.val);
-console.log(sll.head.next.next.next.next.val);
-console.log(sll.tail.val);
-console.log(sll.tail.next);
-console.log("-------------------------------");
-sll = new SinglyLinkedList();
-sll.push(5).push(10).push(15).push(20).push(25);
-console.log(sll.head.val);
-console.log(sll.tail.val);
-sll.rotate(-1);
-console.log(sll.head.val);
-console.log(sll.head.next.val);
-console.log(sll.head.next.next.val);
-console.log(sll.head.next.next.next.val);
-console.log(sll.head.next.next.next.next.val);
-console.log(sll.tail.val);
-console.log(sll.tail.next);
-console.log("-------------------------------");
-console.log("-------------------------------");
-console.log("-----------SET TESTS-----------");
-console.log("-------------------------------");
-sll = new SinglyLinkedList();
-sll.push(5).push(10).push(15).push(20).push(25);
-console.log(sll.set(0, 10));
-console.log(sll.set(1, 2));
-console.log(sll.length);
-console.log(sll.head.val);
-console.log(sll.set(10, 10));
-console.log(sll.set(3, 10));
-console.log(sll.head.next.next.next.val);
